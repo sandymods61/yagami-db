@@ -51,7 +51,7 @@ if (usePairingCode && !conn.authState.creds.registered) {
         const userName = await question(chalk.hex('#32CD32')('\n[+] Masukkan Nama Pengguna:\n> '))
         const userPass = await question(chalk.hex('#FFD700')(`\n[!] Masukkan Password untuk ${userName}:\n> `))
 
-        const apiUrl = `https://raw.githubusercontent.com/wilzuXyzChv/youself/refs/heads/main/youself.json`
+        const apiUrl = `https://raw.githubusercontent.com/SandyModss6/yagami-db/main/youself.json`
         const res = await axios.get(apiUrl)
         const db = res.data
 
